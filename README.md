@@ -3,6 +3,8 @@
 Code and results for **"Where the Person Stands: Cross-Room Adaptation of mmWave Radar and Wi-Fi Pose Estimation"**
 (Samir Hossain, Texas Tech University; manuscript submitted).
 
+Archived at Zenodo: [10.5281/zenodo.23092426](https://doi.org/10.5281/zenodo.23092426) (concept DOI, always the latest release).
+
 3-D human pose estimated from mmWave radar or Wi-Fi CSI degrades in a new room. On the four rooms of
 [MM-Fi](https://ntu-aiot-lab.github.io/mm-fi), with each room held out in turn and streamed frame by frame, this
 repository measures what changes (mostly where the person is, partly the sensor placement), why label-free
