@@ -1,0 +1,677 @@
+{
+ "e0_root_growth_radar": {
+  "value": 25.431245168050125,
+  "text": "25",
+  "source": "E0"
+ },
+ "e0_body_growth_radar": {
+  "value": 8.510744730631501,
+  "text": "9",
+  "source": "E0"
+ },
+ "e0_root_growth_wifi": {
+  "value": 121.90581003824869,
+  "text": "122",
+  "source": "E0"
+ },
+ "e0_body_growth_wifi": {
+  "value": 6.3963120778401645,
+  "text": "6",
+  "source": "E0"
+ },
+ "seeds": {
+  "value": 3.0,
+  "text": "3",
+  "source": "E0"
+ },
+ "table1": {
+  "value": 0.0,
+  "text": "| Sensor | MPJPE, within | MPJPE, new room | Root, within | Root, new room | Root-centred, within | Root-centred, new room |\n|---|---|---|---|---|---|---|\n| mmWave radar | 122 | 149 | 91 | 116 | 77 | 85 |\n| Wi-Fi CSI | 211 | 324 | 167 | 289 | 122 | 128 |",
+  "source": "E0"
+ },
+ "frames_total": {
+  "value": 320760.0,
+  "text": "320,760",
+  "source": "data/cache"
+ },
+ "pts_mean": {
+  "value": 30.705720788128197,
+  "text": "31",
+  "source": "data/cache"
+ },
+ "conf_between_x": {
+  "value": 126.9000015258789,
+  "text": "127",
+  "source": "confound"
+ },
+ "conf_within_x": {
+  "value": 80.80000305175781,
+  "text": "81",
+  "source": "confound"
+ },
+ "conf_resid0_x": {
+  "value": 33.5,
+  "text": "34",
+  "source": "confound"
+ },
+ "conf_resid1_x": {
+  "value": 15.7,
+  "text": "16",
+  "source": "confound"
+ },
+ "conf_between_y": {
+  "value": 11.100000381469727,
+  "text": "11",
+  "source": "confound"
+ },
+ "conf_within_y": {
+  "value": 40.099998474121094,
+  "text": "40",
+  "source": "confound"
+ },
+ "conf_resid0_y": {
+  "value": 34.8,
+  "text": "35",
+  "source": "confound"
+ },
+ "conf_resid1_y": {
+  "value": 25.8,
+  "text": "26",
+  "source": "confound"
+ },
+ "conf_between_z": {
+  "value": 14.600000381469727,
+  "text": "15",
+  "source": "confound"
+ },
+ "conf_within_z": {
+  "value": 63.400001525878906,
+  "text": "63",
+  "source": "confound"
+ },
+ "conf_resid0_z": {
+  "value": 44.8,
+  "text": "45",
+  "source": "confound"
+ },
+ "conf_resid1_z": {
+  "value": 39.5,
+  "text": "40",
+  "source": "confound"
+ },
+ "perm_p": {
+  "value": 9.999000099990002e-05,
+  "text": "0.0001",
+  "source": "confound"
+ },
+ "conf_offset_max": {
+  "value": 80.0,
+  "text": "80",
+  "source": "confound"
+ },
+ "probe_r2_radar_min": {
+  "value": 0.6485313773155212,
+  "text": "0.65",
+  "source": "mechanism_radar"
+ },
+ "probe_r2_radar_max": {
+  "value": 0.8142977356910706,
+  "text": "0.81",
+  "source": "mechanism_radar"
+ },
+ "corr_src_radar_min": {
+  "value": 0.6947365939807438,
+  "text": "+0.69",
+  "source": "mechanism_radar"
+ },
+ "corr_src_radar_max": {
+  "value": 0.8651756135310377,
+  "text": "+0.87",
+  "source": "mechanism_radar"
+ },
+ "corr_norm_z_min": {
+  "value": -0.11105188111382883,
+  "text": "-0.11",
+  "source": "mechanism_radar"
+ },
+ "corr_norm_z_max": {
+  "value": 0.00936013640441764,
+  "text": "+0.01",
+  "source": "mechanism_radar"
+ },
+ "norm_depth_sd_min": {
+  "value": 789.9015502929688,
+  "text": "790",
+  "source": "mechanism_radar"
+ },
+ "norm_depth_sd_max": {
+  "value": 1260.082763671875,
+  "text": "1260",
+  "source": "mechanism_radar"
+ },
+ "true_depth_sd_min": {
+  "value": 107.9056167602539,
+  "text": "108",
+  "source": "mechanism_radar"
+ },
+ "true_depth_sd_max": {
+  "value": 133.0006561279297,
+  "text": "133",
+  "source": "mechanism_radar"
+ },
+ "probe_r2_wifi_min": {
+  "value": 0.03322523832321167,
+  "text": "0.03",
+  "source": "mechanism_wifi"
+ },
+ "probe_r2_wifi_max": {
+  "value": 0.6835039854049683,
+  "text": "0.68",
+  "source": "mechanism_wifi"
+ },
+ "corr_src_wifi_min": {
+  "value": -0.12338993400450907,
+  "text": "-0.12",
+  "source": "mechanism_wifi"
+ },
+ "corr_src_wifi_max": {
+  "value": 0.17819000297081472,
+  "text": "+0.18",
+  "source": "mechanism_wifi"
+ },
+ "within_radar": {
+  "value": 122.1,
+  "text": "122",
+  "source": "headline"
+ },
+ "src_radar": {
+  "value": 149.3,
+  "text": "149",
+  "source": "headline"
+ },
+ "src_root_radar": {
+  "value": 116.0,
+  "text": "116",
+  "source": "headline"
+ },
+ "src_act_radar": {
+  "value": 0.775,
+  "text": "0.78",
+  "source": "headline"
+ },
+ "cal_radar": {
+  "value": 133.7,
+  "text": "133.7",
+  "source": "headline"
+ },
+ "ft_radar": {
+  "value": 133.7,
+  "text": "133.7",
+  "source": "headline"
+ },
+ "cal_close_radar": {
+  "value": 57.35294117647064,
+  "text": "57",
+  "source": "headline"
+ },
+ "within_wifi": {
+  "value": 210.7,
+  "text": "211",
+  "source": "headline"
+ },
+ "src_wifi": {
+  "value": 323.6,
+  "text": "324",
+  "source": "headline"
+ },
+ "src_root_wifi": {
+  "value": 289.3,
+  "text": "289",
+  "source": "headline"
+ },
+ "src_act_wifi": {
+  "value": 0.04,
+  "text": "0.04",
+  "source": "headline"
+ },
+ "cal_wifi": {
+  "value": 217.4,
+  "text": "217.4",
+  "source": "headline"
+ },
+ "ft_wifi": {
+  "value": 188.0,
+  "text": "188.0",
+  "source": "headline"
+ },
+ "cal_close_wifi": {
+  "value": 94.0655447298494,
+  "text": "94",
+  "source": "headline"
+ },
+ "table3": {
+  "value": 0.0,
+  "text": "| Sensor | Method | MPJPE | Root | Root-centred |\n|---|---|---|---|---|\n| mmWave radar | Frozen model | 149.3 \u00b1 0.6 | 116.0 | 85.1 |\n| mmWave radar | Rigid correction | 137.3 \u00b1 0.9 | 101.6 | 85.2 |\n| mmWave radar | Affine correction | 134.8 \u00b1 0.9 | 98.6 | 85.2 |\n| mmWave radar | Affine correction + smoothing | 133.7 \u00b1 0.8 | 98.1 | 84.9 |\n| mmWave radar | Online fine-tuning (tuned) | 133.7 \u00b1 0.4 | 98.4 | 84.8 |\n| mmWave radar | Within-room reference | 122.1 |  |  |\n| Wi-Fi CSI | Frozen model | 323.6 \u00b1 1.6 | 289.3 | 128.5 |\n| Wi-Fi CSI | Rigid correction | 240.4 \u00b1 1.3 | 196.1 | 129.8 |\n| Wi-Fi CSI | Affine correction | 223.9 \u00b1 0.3 | 177.5 | 128.5 |\n| Wi-Fi CSI | Affine correction + smoothing | 217.4 \u00b1 0.5 | 172.9 | 124.2 |\n| Wi-Fi CSI | Online fine-tuning (tuned) | 188.0 \u00b1 0.8 | 142.7 | 118.0 |\n| Wi-Fi CSI | Within-room reference | 210.7 |  |  |",
+  "source": "headline"
+ },
+ "budget_radar_diff_min": {
+  "value": -2.4,
+  "text": "-2.4",
+  "source": "budget"
+ },
+ "budget_radar_diff_max": {
+  "value": 0.3,
+  "text": "+0.3",
+  "source": "budget"
+ },
+ "budget_radar_npairs_min": {
+  "value": 6.0,
+  "text": "6",
+  "source": "budget"
+ },
+ "budget_radar_npairs_max": {
+  "value": 9.0,
+  "text": "9",
+  "source": "budget"
+ },
+ "budget_npairs": {
+  "value": 12.0,
+  "text": "12",
+  "source": "budget"
+ },
+ "budget_radar_5pct": {
+  "value": 3.4,
+  "text": "3.4",
+  "source": "budget"
+ },
+ "budget_radar_01pct": {
+  "value": -0.5,
+  "text": "-0.5",
+  "source": "budget"
+ },
+ "budget_radar_calib_better_total": {
+  "value": 40.0,
+  "text": "40",
+  "source": "budget"
+ },
+ "budget_radar_pairs_total": {
+  "value": 72.0,
+  "text": "72",
+  "source": "budget"
+ },
+ "budget_wifi_diff_min": {
+  "value": 8.8,
+  "text": "+8.8",
+  "source": "budget"
+ },
+ "budget_wifi_diff_max": {
+  "value": 29.8,
+  "text": "+29.8",
+  "source": "budget"
+ },
+ "budget_wifi_npairs_min": {
+  "value": 0.0,
+  "text": "0",
+  "source": "budget"
+ },
+ "budget_wifi_npairs_max": {
+  "value": 0.0,
+  "text": "0",
+  "source": "budget"
+ },
+ "budget_wifi_5pct": {
+  "value": 31.0,
+  "text": "31.0",
+  "source": "budget"
+ },
+ "budget_wifi_01pct": {
+  "value": 8.8,
+  "text": "8.8",
+  "source": "budget"
+ },
+ "budget_wifi_calib_better_total": {
+  "value": 0.0,
+  "text": "0",
+  "source": "budget"
+ },
+ "budget_wifi_pairs_total": {
+  "value": 72.0,
+  "text": "72",
+  "source": "budget"
+ },
+ "ft_grid_radar": {
+  "value": 13.0,
+  "source": "sweep_supft",
+  "text": "13 settings with learning rates from 3 \u00d7 10\u207b\u2077 to 10\u207b\u2074 and 1 to 64 steps"
+ },
+ "ft_grid_wifi": {
+  "value": 16.0,
+  "source": "sweep_supft",
+  "text": "16 settings with learning rates from 10\u207b\u2074 to 3 \u00d7 10\u207b\u00b3 and 1 to 256 steps"
+ },
+ "ft_onestep_gap_wifi": {
+  "value": 38.58552551269531,
+  "text": "39",
+  "source": "sweep_supft"
+ },
+ "once1_radar": {
+  "value": 158.2,
+  "text": "158.2",
+  "source": "calonce"
+ },
+ "once3_radar": {
+  "value": 149.9,
+  "text": "149.9",
+  "source": "calonce"
+ },
+ "cont3_radar": {
+  "value": 135.9,
+  "text": "135.9",
+  "source": "calonce"
+ },
+ "cont1_radar": {
+  "value": 134.6,
+  "text": "134.6",
+  "source": "calonce"
+ },
+ "once_src1_radar": {
+  "value": 149.5,
+  "text": "149.5",
+  "source": "calonce"
+ },
+ "once_src3_radar": {
+  "value": 151.2,
+  "text": "151.2",
+  "source": "calonce"
+ },
+ "once_share_radar": {
+  "value": 8.49673202614369,
+  "text": "8",
+  "source": "calonce"
+ },
+ "once3_shift_radar": {
+  "value": 150.6,
+  "text": "150.6",
+  "source": "calonce"
+ },
+ "once1_wifi": {
+  "value": 291.8,
+  "text": "291.8",
+  "source": "calonce"
+ },
+ "once3_wifi": {
+  "value": 255.6,
+  "text": "255.6",
+  "source": "calonce"
+ },
+ "cont3_wifi": {
+  "value": 219.8,
+  "text": "219.8",
+  "source": "calonce"
+ },
+ "cont1_wifi": {
+  "value": 219.2,
+  "text": "219.2",
+  "source": "calonce"
+ },
+ "once_src1_wifi": {
+  "value": 322.8,
+  "text": "322.8",
+  "source": "calonce"
+ },
+ "once_src3_wifi": {
+  "value": 327.9,
+  "text": "327.9",
+  "source": "calonce"
+ },
+ "once_share_wifi": {
+  "value": 66.88251618871416,
+  "text": "67",
+  "source": "calonce"
+ },
+ "once3_shift_wifi": {
+  "value": 274.1,
+  "text": "274.1",
+  "source": "calonce"
+ },
+ "bias_room_radar": {
+  "value": 48.79011016294685,
+  "text": "49",
+  "source": "bias_radar"
+ },
+ "bias_subj_radar": {
+  "value": 53.08689155095768,
+  "text": "53",
+  "source": "bias_radar"
+ },
+ "bias_slope_radar_x": {
+  "value": 29.67539514468354,
+  "text": "30",
+  "source": "bias_radar"
+ },
+ "bias_slope_radar_y": {
+  "value": 61.808735283776294,
+  "text": "62",
+  "source": "bias_radar"
+ },
+ "bias_slope_radar_z": {
+  "value": 41.52039208448699,
+  "text": "42",
+  "source": "bias_radar"
+ },
+ "bias_room_wifi": {
+  "value": 185.17679399973167,
+  "text": "185",
+  "source": "bias_wifi"
+ },
+ "bias_subj_wifi": {
+  "value": 118.3213258907287,
+  "text": "118",
+  "source": "bias_wifi"
+ },
+ "bias_slope_wifi_x": {
+  "value": 130.7254821070892,
+  "text": "131",
+  "source": "bias_wifi"
+ },
+ "bias_slope_wifi_y": {
+  "value": 103.78238442449484,
+  "text": "104",
+  "source": "bias_wifi"
+ },
+ "bias_slope_wifi_z": {
+  "value": 103.38723891917859,
+  "text": "103",
+  "source": "bias_wifi"
+ },
+ "norm_radar": {
+  "value": 1250.8,
+  "text": "1251",
+  "source": "labelfree"
+ },
+ "tent_radar": {
+  "value": 1623.2,
+  "text": "1623",
+  "source": "labelfree"
+ },
+ "smooth_radar": {
+  "value": 148.3,
+  "text": "148",
+  "source": "labelfree"
+ },
+ "iid_norm_radar": {
+  "value": 245.3,
+  "text": "245",
+  "source": "labelfree"
+ },
+ "iid_norm_root_radar": {
+  "value": 223.3,
+  "text": "223",
+  "source": "labelfree"
+ },
+ "iid_norm_act_radar": {
+  "value": 0.813,
+  "text": "0.81",
+  "source": "labelfree"
+ },
+ "iid_tent_act_radar": {
+  "value": 0.835,
+  "text": "0.83",
+  "source": "labelfree"
+ },
+ "norm_wifi": {
+  "value": 516.5,
+  "text": "516",
+  "source": "labelfree"
+ },
+ "tent_wifi": {
+  "value": 765.8,
+  "text": "766",
+  "source": "labelfree"
+ },
+ "smooth_wifi": {
+  "value": 313.4,
+  "text": "313",
+  "source": "labelfree"
+ },
+ "iid_norm_wifi": {
+  "value": 356.1,
+  "text": "356",
+  "source": "labelfree"
+ },
+ "iid_norm_root_wifi": {
+  "value": 322.3,
+  "text": "322",
+  "source": "labelfree"
+ },
+ "iid_norm_act_wifi": {
+  "value": 0.041,
+  "text": "0.04",
+  "source": "labelfree"
+ },
+ "iid_tent_act_wifi": {
+  "value": 0.037,
+  "text": "0.04",
+  "source": "labelfree"
+ },
+ "table2": {
+  "value": 0.0,
+  "text": "| Sensor | Method | MPJPE | Root | Root-centred | Action |\n|---|---|---|---|---|---|\n| mmWave radar | Frozen model | 149 | 116 | 85 | 0.78 |\n| mmWave radar | Normalization statistics | 1251 | 1226 | 206 | 0.27 |\n| mmWave radar | Tent | 1623 | 1594 | 261 | 0.16 |\n| mmWave radar | Smoothing of predictions | 148 | 116 | 85 | 0.78 |\n| mmWave radar | Normalization statistics, shuffled | 245 | 223 | 87 | 0.81 |\n| mmWave radar | Tent, shuffled | 634 | 618 | 120 | 0.83 |\n| Wi-Fi CSI | Frozen model | 324 | 289 | 128 | 0.04 |\n| Wi-Fi CSI | Normalization statistics | 516 | 487 | 144 | 0.04 |\n| Wi-Fi CSI | Tent | 766 | 727 | 204 | 0.04 |\n| Wi-Fi CSI | Smoothing of predictions | 313 | 280 | 124 | 0.04 |\n| Wi-Fi CSI | Normalization statistics, shuffled | 356 | 322 | 132 | 0.04 |\n| Wi-Fi CSI | Tent, shuffled | 726 | 687 | 204 | 0.04 |",
+  "source": "labelfree"
+ },
+ "pre_radar_min": {
+  "value": 0.7971773387253848,
+  "text": "0.80",
+  "source": "predeploy"
+ },
+ "pre_radar_max": {
+  "value": 0.9078458040637714,
+  "text": "0.91",
+  "source": "predeploy"
+ },
+ "pre_wifi_x_min": {
+  "value": 0.19460964180075793,
+  "text": "0.19",
+  "source": "predeploy"
+ },
+ "pre_wifi_x_max": {
+  "value": 0.6215520147845806,
+  "text": "0.62",
+  "source": "predeploy"
+ },
+ "pre_wifi_yz_max": {
+  "value": 0.3596129283699907,
+  "text": "0.36",
+  "source": "predeploy"
+ },
+ "lat_gpu_corr_upd_max": {
+  "value": 0.37204998079687357,
+  "text": "0.4",
+  "source": "latency"
+ },
+ "lat_gpu_ft_upd_radar": {
+  "value": 18.18915014155209,
+  "text": "18",
+  "source": "latency"
+ },
+ "lat_gpu_ft_frame_radar": {
+  "value": 0.32508537534158677,
+  "text": "0.3",
+  "source": "latency"
+ },
+ "lat_gpu_src_frame_radar": {
+  "value": 0.16916625038720667,
+  "text": "0.2",
+  "source": "latency"
+ },
+ "lat_gpu_cal_frame_radar": {
+  "value": 0.17950352519983426,
+  "text": "0.2",
+  "source": "latency"
+ },
+ "lat_gpu_ft_upd_wifi": {
+  "value": 203.49520002491772,
+  "text": "203",
+  "source": "latency"
+ },
+ "lat_gpu_ft_frame_wifi": {
+  "value": 2.068749350029975,
+  "text": "2.1",
+  "source": "latency"
+ },
+ "lat_gpu_src_frame_wifi": {
+  "value": 0.0606403494020924,
+  "text": "0.1",
+  "source": "latency"
+ },
+ "lat_gpu_cal_frame_wifi": {
+  "value": 0.17754429997876287,
+  "text": "0.2",
+  "source": "latency"
+ },
+ "lat_cpu_corr_upd_max": {
+  "value": 0.2899999963119626,
+  "text": "0.3",
+  "source": "latency"
+ },
+ "lat_cpu_ft_upd_radar": {
+  "value": 170.9812000626698,
+  "text": "171",
+  "source": "latency"
+ },
+ "lat_cpu_ft_frame_radar": {
+  "value": 2.300066899624653,
+  "text": "2.3",
+  "source": "latency"
+ },
+ "lat_cpu_src_frame_radar": {
+  "value": 0.6170458009582944,
+  "text": "0.6",
+  "source": "latency"
+ },
+ "lat_cpu_cal_frame_radar": {
+  "value": 0.6084918254055083,
+  "text": "0.6",
+  "source": "latency"
+ },
+ "lat_cpu_ft_upd_wifi": {
+  "value": 5315.973700140603,
+  "text": "5,316",
+  "source": "latency"
+ },
+ "lat_cpu_ft_frame_wifi": {
+  "value": 53.24556932481937,
+  "text": "53.2",
+  "source": "latency"
+ },
+ "lat_cpu_src_frame_wifi": {
+  "value": 1.557395525102038,
+  "text": "1.6",
+  "source": "latency"
+ },
+ "lat_cpu_cal_frame_wifi": {
+  "value": 1.6905441746348515,
+  "text": "1.7",
+  "source": "latency"
+ }
+}

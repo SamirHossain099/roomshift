@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use roomshift, please cite it as below."
+title: "roomshift: cross-room adaptation of mmWave radar and Wi-Fi human pose estimation"
+abstract: >-
+  3-D human pose from mmWave radar or Wi-Fi CSI degrades in a new room. On the four rooms of MM-Fi, held out in
+  turn and streamed frame by frame, roomshift decomposes the cross-room error into the person's position and the
+  body's shape, tests whether the radar-to-pose transform differs between rooms with each subject's position held
+  fixed, shows why label-free test-time adaptation of normalization statistics destroys absolute pose, and compares
+  a gradient-free 12-parameter output correction from sparse labels with tuned online fine-tuning across label
+  budgets, including a correction fitted once per room. Tests pin every reported number to the released results.
+type: software
+authors:
+  - given-names: Samir
+    family-names: Hossain
+    orcid: "https://orcid.org/0009-0003-8986-0946"
+    affiliation: "Department of Electrical and Computer Engineering, Texas Tech University"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/SamirHossain099/roomshift"
+keywords:
+  - human pose estimation
+  - mmWave radar
+  - Wi-Fi sensing
+  - test-time adaptation
+  - domain shift
+  - sensor calibration
+  - MM-Fi

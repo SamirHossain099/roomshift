@@ -1,0 +1,142 @@
+{
+ "cuda/radar/source": {
+  "ms_per_frame_amortised": 0.16916625038720667,
+  "ms_per_update": 0.00400003045797348,
+  "frames": 4000
+ },
+ "cuda/radar/smooth": {
+  "ms_per_frame_amortised": 0.15952514950186014,
+  "ms_per_update": 0.005149981006979942,
+  "frames": 4000
+ },
+ "cuda/radar/shift": {
+  "ms_per_frame_amortised": 0.074364474916365,
+  "ms_per_update": 0.2855999628081918,
+  "frames": 4000
+ },
+ "cuda/radar/rigid": {
+  "ms_per_frame_amortised": 0.06946462468476966,
+  "ms_per_update": 0.3683500690385699,
+  "frames": 4000
+ },
+ "cuda/radar/affine": {
+  "ms_per_frame_amortised": 0.0688771246932447,
+  "ms_per_update": 0.3619501367211342,
+  "frames": 4000
+ },
+ "cuda/radar/affine+smooth": {
+  "ms_per_frame_amortised": 0.17950352519983426,
+  "ms_per_update": 0.36280008498579264,
+  "frames": 4000
+ },
+ "cuda/radar/supft": {
+  "ms_per_frame_amortised": 0.32508537534158677,
+  "ms_per_update": 18.18915014155209,
+  "frames": 4000
+ },
+ "cuda/wifi/source": {
+  "ms_per_frame_amortised": 0.0606403494020924,
+  "ms_per_update": 0.00509992241859436,
+  "frames": 4000
+ },
+ "cuda/wifi/smooth": {
+  "ms_per_frame_amortised": 0.16574049968039617,
+  "ms_per_update": 0.005349982529878616,
+  "frames": 4000
+ },
+ "cuda/wifi/shift": {
+  "ms_per_frame_amortised": 0.06956057483330369,
+  "ms_per_update": 0.2764000091701746,
+  "frames": 4000
+ },
+ "cuda/wifi/rigid": {
+  "ms_per_frame_amortised": 0.06540362519444898,
+  "ms_per_update": 0.333750038407743,
+  "frames": 4000
+ },
+ "cuda/wifi/affine": {
+  "ms_per_frame_amortised": 0.06270842463709414,
+  "ms_per_update": 0.29634987004101276,
+  "frames": 4000
+ },
+ "cuda/wifi/affine+smooth": {
+  "ms_per_frame_amortised": 0.17754429997876287,
+  "ms_per_update": 0.37204998079687357,
+  "frames": 4000
+ },
+ "cuda/wifi/supft": {
+  "ms_per_frame_amortised": 2.068749350029975,
+  "ms_per_update": 203.49520002491772,
+  "frames": 4000
+ },
+ "cpu/radar/source": {
+  "ms_per_frame_amortised": 0.6170458009582944,
+  "ms_per_update": 0.0012998934835195541,
+  "frames": 4000
+ },
+ "cpu/radar/smooth": {
+  "ms_per_frame_amortised": 0.6272727999603376,
+  "ms_per_update": 0.001100124791264534,
+  "frames": 4000
+ },
+ "cpu/radar/shift": {
+  "ms_per_frame_amortised": 0.578532925224863,
+  "ms_per_update": 0.15710003208369017,
+  "frames": 4000
+ },
+ "cpu/radar/rigid": {
+  "ms_per_frame_amortised": 0.6117046258877963,
+  "ms_per_update": 0.2822499955072999,
+  "frames": 4000
+ },
+ "cpu/radar/affine": {
+  "ms_per_frame_amortised": 0.6113917505717836,
+  "ms_per_update": 0.23564998991787434,
+  "frames": 4000
+ },
+ "cpu/radar/affine+smooth": {
+  "ms_per_frame_amortised": 0.6084918254055083,
+  "ms_per_update": 0.20890007726848125,
+  "frames": 4000
+ },
+ "cpu/radar/supft": {
+  "ms_per_frame_amortised": 2.300066899624653,
+  "ms_per_update": 170.9812000626698,
+  "frames": 4000
+ },
+ "cpu/wifi/source": {
+  "ms_per_frame_amortised": 1.557395525102038,
+  "ms_per_update": 0.0012998934835195541,
+  "frames": 4000
+ },
+ "cpu/wifi/smooth": {
+  "ms_per_frame_amortised": 1.676798775442876,
+  "ms_per_update": 0.00100000761449337,
+  "frames": 4000
+ },
+ "cpu/wifi/shift": {
+  "ms_per_frame_amortised": 1.6688836748944595,
+  "ms_per_update": 0.1650999765843153,
+  "frames": 4000
+ },
+ "cpu/wifi/rigid": {
+  "ms_per_frame_amortised": 1.6128609998268075,
+  "ms_per_update": 0.2899999963119626,
+  "frames": 4000
+ },
+ "cpu/wifi/affine": {
+  "ms_per_frame_amortised": 1.5711135000456125,
+  "ms_per_update": 0.23260002490133047,
+  "frames": 4000
+ },
+ "cpu/wifi/affine+smooth": {
+  "ms_per_frame_amortised": 1.6905441746348515,
+  "ms_per_update": 0.23390003480017185,
+  "frames": 4000
+ },
+ "cpu/wifi/supft": {
+  "ms_per_frame_amortised": 53.24556932481937,
+  "ms_per_update": 5315.973700140603,
+  "frames": 4000
+ }
+}

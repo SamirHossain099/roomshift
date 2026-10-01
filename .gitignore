@@ -1,0 +1,12 @@
+data/
+checkpoints/
+__pycache__/
+*.pyc
+.pytest_cache/
+MANUSCRIPT*.docx
+MANUSCRIPT*.pdf
+references-missing.ris
+zotero_keys.json
+results/*.txt
+results/fig_mechanism.json
+public-repo/
