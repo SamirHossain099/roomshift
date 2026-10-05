@@ -1,142 +1,170 @@
 {
  "cuda/radar/source": {
-  "ms_per_frame_amortised": 0.16916625038720667,
-  "ms_per_update": 0.00400003045797348,
+  "ms_per_frame_amortised": 0.12304782512364909,
+  "ms_per_update": 0.004499917849898338,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/radar/smooth": {
-  "ms_per_frame_amortised": 0.15952514950186014,
-  "ms_per_update": 0.005149981006979942,
+  "ms_per_frame_amortised": 0.14613214967539534,
+  "ms_per_update": 0.004399917088449001,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/radar/shift": {
-  "ms_per_frame_amortised": 0.074364474916365,
-  "ms_per_update": 0.2855999628081918,
+  "ms_per_frame_amortised": 0.07336527528241277,
+  "ms_per_update": 0.280149863101542,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/radar/rigid": {
-  "ms_per_frame_amortised": 0.06946462468476966,
-  "ms_per_update": 0.3683500690385699,
+  "ms_per_frame_amortised": 0.0653332001529634,
+  "ms_per_update": 0.35969994496554136,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/radar/affine": {
-  "ms_per_frame_amortised": 0.0688771246932447,
-  "ms_per_update": 0.3619501367211342,
+  "ms_per_frame_amortised": 0.06991179997567087,
+  "ms_per_update": 0.34785002935677767,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/radar/affine+smooth": {
-  "ms_per_frame_amortised": 0.17950352519983426,
-  "ms_per_update": 0.36280008498579264,
+  "ms_per_frame_amortised": 0.16682812536600977,
+  "ms_per_update": 0.35975000355392694,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/radar/supft": {
-  "ms_per_frame_amortised": 0.32508537534158677,
-  "ms_per_update": 18.18915014155209,
+  "ms_per_frame_amortised": 0.2854427248239517,
+  "ms_per_update": 17.427949933335185,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/source": {
-  "ms_per_frame_amortised": 0.0606403494020924,
-  "ms_per_update": 0.00509992241859436,
+  "ms_per_frame_amortised": 0.055934099305886775,
+  "ms_per_update": 0.004300149157643318,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/smooth": {
-  "ms_per_frame_amortised": 0.16574049968039617,
-  "ms_per_update": 0.005349982529878616,
+  "ms_per_frame_amortised": 0.15804934996413067,
+  "ms_per_update": 0.004599918611347675,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/shift": {
-  "ms_per_frame_amortised": 0.06956057483330369,
-  "ms_per_update": 0.2764000091701746,
+  "ms_per_frame_amortised": 0.06887012551305816,
+  "ms_per_update": 0.27329998556524515,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/rigid": {
-  "ms_per_frame_amortised": 0.06540362519444898,
-  "ms_per_update": 0.333750038407743,
+  "ms_per_frame_amortised": 0.06978657469153404,
+  "ms_per_update": 0.36405003629624844,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/affine": {
-  "ms_per_frame_amortised": 0.06270842463709414,
-  "ms_per_update": 0.29634987004101276,
+  "ms_per_frame_amortised": 0.07503087469376624,
+  "ms_per_update": 0.33169996459037066,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/affine+smooth": {
-  "ms_per_frame_amortised": 0.17754429997876287,
-  "ms_per_update": 0.37204998079687357,
+  "ms_per_frame_amortised": 0.17867080052383244,
+  "ms_per_update": 0.35654997918754816,
+  "updates": 40,
   "frames": 4000
  },
  "cuda/wifi/supft": {
-  "ms_per_frame_amortised": 2.068749350029975,
-  "ms_per_update": 203.49520002491772,
+  "ms_per_frame_amortised": 2.085791925317608,
+  "ms_per_update": 205.78209997620434,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/source": {
-  "ms_per_frame_amortised": 0.6170458009582944,
-  "ms_per_update": 0.0012998934835195541,
+  "ms_per_frame_amortised": 0.515625,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/smooth": {
-  "ms_per_frame_amortised": 0.6272727999603376,
-  "ms_per_update": 0.001100124791264534,
+  "ms_per_frame_amortised": 0.515625,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/shift": {
-  "ms_per_frame_amortised": 0.578532925224863,
-  "ms_per_update": 0.15710003208369017,
+  "ms_per_frame_amortised": 0.5,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/rigid": {
-  "ms_per_frame_amortised": 0.6117046258877963,
-  "ms_per_update": 0.2822499955072999,
+  "ms_per_frame_amortised": 0.51171875,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/affine": {
-  "ms_per_frame_amortised": 0.6113917505717836,
-  "ms_per_update": 0.23564998991787434,
+  "ms_per_frame_amortised": 0.5078125,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/affine+smooth": {
-  "ms_per_frame_amortised": 0.6084918254055083,
-  "ms_per_update": 0.20890007726848125,
+  "ms_per_frame_amortised": 0.51171875,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/radar/supft": {
-  "ms_per_frame_amortised": 2.300066899624653,
-  "ms_per_update": 170.9812000626698,
+  "ms_per_frame_amortised": 1.953125,
+  "ms_per_update": 143.75,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/source": {
-  "ms_per_frame_amortised": 1.557395525102038,
-  "ms_per_update": 0.0012998934835195541,
+  "ms_per_frame_amortised": 1.21484375,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/smooth": {
-  "ms_per_frame_amortised": 1.676798775442876,
-  "ms_per_update": 0.00100000761449337,
+  "ms_per_frame_amortised": 1.2265625,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/shift": {
-  "ms_per_frame_amortised": 1.6688836748944595,
-  "ms_per_update": 0.1650999765843153,
+  "ms_per_frame_amortised": 1.20703125,
+  "ms_per_update": 0.390625,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/rigid": {
-  "ms_per_frame_amortised": 1.6128609998268075,
-  "ms_per_update": 0.2899999963119626,
+  "ms_per_frame_amortised": 1.19140625,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/affine": {
-  "ms_per_frame_amortised": 1.5711135000456125,
-  "ms_per_update": 0.23260002490133047,
+  "ms_per_frame_amortised": 1.234375,
+  "ms_per_update": 0.390625,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/affine+smooth": {
-  "ms_per_frame_amortised": 1.6905441746348515,
-  "ms_per_update": 0.23390003480017185,
+  "ms_per_frame_amortised": 1.2578125,
+  "ms_per_update": 0.0,
+  "updates": 40,
   "frames": 4000
  },
  "cpu/wifi/supft": {
-  "ms_per_frame_amortised": 53.24556932481937,
-  "ms_per_update": 5315.973700140603,
+  "ms_per_frame_amortised": 39.32421875,
+  "ms_per_update": 3814.0625,
+  "updates": 40,
   "frames": 4000
  }
 }

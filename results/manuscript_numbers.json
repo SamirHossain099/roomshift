@@ -26,7 +26,7 @@
  },
  "table1": {
   "value": 0.0,
-  "text": "| Sensor | MPJPE, within | MPJPE, new room | Root, within | Root, new room | Root-centred, within | Root-centred, new room |\n|---|---|---|---|---|---|---|\n| mmWave radar | 122 | 149 | 91 | 116 | 77 | 85 |\n| Wi-Fi CSI | 211 | 324 | 167 | 289 | 122 | 128 |",
+  "text": "| Error | Radar, same room | Radar, new room | Wi-Fi, same room | Wi-Fi, new room |\n|---|---|---|---|---|\n| MPJPE | 122 | 149 | 211 | 324 |\n| Root | 91 | 116 | 167 | 289 |\n| Root-centred | 77 | 85 | 122 | 128 |",
   "source": "E0"
  },
  "frames_total": {
@@ -251,7 +251,7 @@
  },
  "table3": {
   "value": 0.0,
-  "text": "| Sensor | Method | MPJPE | Root | Root-centred |\n|---|---|---|---|---|\n| mmWave radar | Frozen model | 149.3 \u00b1 0.6 | 116.0 | 85.1 |\n| mmWave radar | Rigid correction | 137.3 \u00b1 0.9 | 101.6 | 85.2 |\n| mmWave radar | Affine correction | 134.8 \u00b1 0.9 | 98.6 | 85.2 |\n| mmWave radar | Affine correction + smoothing | 133.7 \u00b1 0.8 | 98.1 | 84.9 |\n| mmWave radar | Online fine-tuning (tuned) | 133.7 \u00b1 0.4 | 98.4 | 84.8 |\n| mmWave radar | Within-room reference | 122.1 |  |  |\n| Wi-Fi CSI | Frozen model | 323.6 \u00b1 1.6 | 289.3 | 128.5 |\n| Wi-Fi CSI | Rigid correction | 240.4 \u00b1 1.3 | 196.1 | 129.8 |\n| Wi-Fi CSI | Affine correction | 223.9 \u00b1 0.3 | 177.5 | 128.5 |\n| Wi-Fi CSI | Affine correction + smoothing | 217.4 \u00b1 0.5 | 172.9 | 124.2 |\n| Wi-Fi CSI | Online fine-tuning (tuned) | 188.0 \u00b1 0.8 | 142.7 | 118.0 |\n| Wi-Fi CSI | Within-room reference | 210.7 |  |  |",
+  "text": "| Method | MPJPE | Root | Root-centred |\n|---|---|---|---|\n| mmWave radar |  |  |  |\n| Frozen model | 149.3 \u00b1 0.6 | 116.0 | 85.1 |\n| Rigid correction | 137.3 \u00b1 0.9 | 101.6 | 85.2 |\n| Affine correction | 134.8 \u00b1 0.9 | 98.6 | 85.2 |\n| Affine + smoothing | 133.7 \u00b1 0.8 | 98.1 | 84.9 |\n| Fine-tuning (tuned) | 133.7 \u00b1 0.4 | 98.4 | 84.8 |\n| Same-room reference | 122.1 |  |  |\n| Wi-Fi CSI |  |  |  |\n| Frozen model | 323.6 \u00b1 1.6 | 289.3 | 128.5 |\n| Rigid correction | 240.4 \u00b1 1.3 | 196.1 | 129.8 |\n| Affine correction | 223.9 \u00b1 0.3 | 177.5 | 128.5 |\n| Affine + smoothing | 217.4 \u00b1 0.5 | 172.9 | 124.2 |\n| Fine-tuning (tuned) | 188.0 \u00b1 0.8 | 142.7 | 118.0 |\n| Same-room reference | 210.7 |  |  |",
   "source": "headline"
  },
  "budget_radar_diff_min": {
@@ -556,7 +556,7 @@
  },
  "table2": {
   "value": 0.0,
-  "text": "| Sensor | Method | MPJPE | Root | Root-centred | Action |\n|---|---|---|---|---|---|\n| mmWave radar | Frozen model | 149 | 116 | 85 | 0.78 |\n| mmWave radar | Normalization statistics | 1251 | 1226 | 206 | 0.27 |\n| mmWave radar | Tent | 1623 | 1594 | 261 | 0.16 |\n| mmWave radar | Smoothing of predictions | 148 | 116 | 85 | 0.78 |\n| mmWave radar | Normalization statistics, shuffled | 245 | 223 | 87 | 0.81 |\n| mmWave radar | Tent, shuffled | 634 | 618 | 120 | 0.83 |\n| Wi-Fi CSI | Frozen model | 324 | 289 | 128 | 0.04 |\n| Wi-Fi CSI | Normalization statistics | 516 | 487 | 144 | 0.04 |\n| Wi-Fi CSI | Tent | 766 | 727 | 204 | 0.04 |\n| Wi-Fi CSI | Smoothing of predictions | 313 | 280 | 124 | 0.04 |\n| Wi-Fi CSI | Normalization statistics, shuffled | 356 | 322 | 132 | 0.04 |\n| Wi-Fi CSI | Tent, shuffled | 726 | 687 | 204 | 0.04 |",
+  "text": "| Method | MPJPE | Root | Root-centred | Action |\n|---|---|---|---|---|\n| mmWave radar |  |  |  |  |\n| Frozen model | 149 | 116 | 85 | 0.78 |\n| Norm. statistics | 1251 | 1226 | 206 | 0.27 |\n| Tent | 1623 | 1594 | 261 | 0.16 |\n| Smoothing | 148 | 116 | 85 | 0.78 |\n| Norm. statistics, shuffled | 245 | 223 | 87 | 0.81 |\n| Tent, shuffled | 634 | 618 | 120 | 0.83 |\n| Wi-Fi CSI |  |  |  |  |\n| Frozen model | 324 | 289 | 128 | 0.04 |\n| Norm. statistics | 516 | 487 | 144 | 0.04 |\n| Tent | 766 | 727 | 204 | 0.04 |\n| Smoothing | 313 | 280 | 124 | 0.04 |\n| Norm. statistics, shuffled | 356 | 322 | 132 | 0.04 |\n| Tent, shuffled | 726 | 687 | 204 | 0.04 |",
   "source": "labelfree"
  },
  "pre_radar_min": {
@@ -585,93 +585,93 @@
   "source": "predeploy"
  },
  "lat_gpu_corr_upd_max": {
-  "value": 0.37204998079687357,
+  "value": 0.36405003629624844,
   "text": "0.4",
   "source": "latency"
  },
  "lat_gpu_ft_upd_radar": {
-  "value": 18.18915014155209,
-  "text": "18",
+  "value": 17.427949933335185,
+  "text": "17",
   "source": "latency"
  },
  "lat_gpu_ft_frame_radar": {
-  "value": 0.32508537534158677,
+  "value": 0.2854427248239517,
   "text": "0.3",
   "source": "latency"
  },
  "lat_gpu_src_frame_radar": {
-  "value": 0.16916625038720667,
-  "text": "0.2",
+  "value": 0.12304782512364909,
+  "text": "0.1",
   "source": "latency"
  },
  "lat_gpu_cal_frame_radar": {
-  "value": 0.17950352519983426,
+  "value": 0.16682812536600977,
   "text": "0.2",
   "source": "latency"
  },
  "lat_gpu_ft_upd_wifi": {
-  "value": 203.49520002491772,
-  "text": "203",
+  "value": 205.78209997620434,
+  "text": "206",
   "source": "latency"
  },
  "lat_gpu_ft_frame_wifi": {
-  "value": 2.068749350029975,
+  "value": 2.085791925317608,
   "text": "2.1",
   "source": "latency"
  },
  "lat_gpu_src_frame_wifi": {
-  "value": 0.0606403494020924,
+  "value": 0.055934099305886775,
   "text": "0.1",
   "source": "latency"
  },
  "lat_gpu_cal_frame_wifi": {
-  "value": 0.17754429997876287,
+  "value": 0.17867080052383244,
   "text": "0.2",
   "source": "latency"
  },
  "lat_cpu_corr_upd_max": {
-  "value": 0.2899999963119626,
-  "text": "0.3",
+  "value": 0.390625,
+  "text": "0.4",
   "source": "latency"
  },
  "lat_cpu_ft_upd_radar": {
-  "value": 170.9812000626698,
-  "text": "171",
+  "value": 143.75,
+  "text": "144",
   "source": "latency"
  },
  "lat_cpu_ft_frame_radar": {
-  "value": 2.300066899624653,
-  "text": "2.3",
+  "value": 1.953125,
+  "text": "2.0",
   "source": "latency"
  },
  "lat_cpu_src_frame_radar": {
-  "value": 0.6170458009582944,
-  "text": "0.6",
+  "value": 0.515625,
+  "text": "0.5",
   "source": "latency"
  },
  "lat_cpu_cal_frame_radar": {
-  "value": 0.6084918254055083,
-  "text": "0.6",
+  "value": 0.51171875,
+  "text": "0.5",
   "source": "latency"
  },
  "lat_cpu_ft_upd_wifi": {
-  "value": 5315.973700140603,
-  "text": "5,316",
+  "value": 3814.0625,
+  "text": "3,814",
   "source": "latency"
  },
  "lat_cpu_ft_frame_wifi": {
-  "value": 53.24556932481937,
-  "text": "53.2",
+  "value": 39.32421875,
+  "text": "39.3",
   "source": "latency"
  },
  "lat_cpu_src_frame_wifi": {
-  "value": 1.557395525102038,
-  "text": "1.6",
+  "value": 1.21484375,
+  "text": "1.2",
   "source": "latency"
  },
  "lat_cpu_cal_frame_wifi": {
-  "value": 1.6905441746348515,
-  "text": "1.7",
+  "value": 1.2578125,
+  "text": "1.3",
   "source": "latency"
  }
 }

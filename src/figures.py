@@ -123,6 +123,8 @@ def graphical_abstract():
         b.grid(axis="x", visible=False)
         fig.subplots_adjust(left=0.1, right=0.99, bottom=0.24, top=0.88, wspace=0.38)
         fig.savefig(FIG / "graphical_abstract.png", dpi=300)
+        # the same drawing at 900 dpi for the manuscript's abstract box (about 3 in wide there, so 660 px is too few)
+        fig.savefig(FIG / "graphical_abstract_hires.png", dpi=900)
         plt.close(fig)
     from PIL import Image                         # palette PNG: IEEE recommends under 45 KB
     im = Image.open(FIG / "graphical_abstract.png").convert("RGB").resize((660, 295))

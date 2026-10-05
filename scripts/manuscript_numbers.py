@@ -43,17 +43,18 @@ def e0():
         for run in r["runs"]:
             for part in ("within", "cross"):
                 by[(r["modality"], part)][run["seed"]][run["hold"]] = run[part]
-    rows = []
+    v = {}
     for m in MODS:
-        v = {(p, k): _mean_over(by[(m, p)], k)[0] for p in ("within", "cross")
-             for k in ("mpjpe_mm", "root_err_mm", "rel_mpjpe_mm")}
-        put(f"e0_root_growth_{m}", v[("cross", "root_err_mm")] - v[("within", "root_err_mm")], "{:.0f}", "E0")
-        put(f"e0_body_growth_{m}", v[("cross", "rel_mpjpe_mm")] - v[("within", "rel_mpjpe_mm")], "{:.0f}", "E0")
-        rows.append([NAME[m]] + [f"{v[(p, k)]:.0f}" for k in ("mpjpe_mm", "root_err_mm", "rel_mpjpe_mm")
-                                 for p in ("within", "cross")])
+        for p in ("within", "cross"):
+            for k in ("mpjpe_mm", "root_err_mm", "rel_mpjpe_mm"):
+                v[(m, p, k)] = _mean_over(by[(m, p)], k)[0]
+        put(f"e0_root_growth_{m}", v[(m, "cross", "root_err_mm")] - v[(m, "within", "root_err_mm")], "{:.0f}", "E0")
+        put(f"e0_body_growth_{m}", v[(m, "cross", "rel_mpjpe_mm")] - v[(m, "within", "rel_mpjpe_mm")], "{:.0f}", "E0")
     put("seeds", len(by[("radar", "cross")]), "{:d}", "E0")
-    table("table1", ["Sensor", "MPJPE, within", "MPJPE, new room", "Root, within", "Root, new room",
-                     "Root-centred, within", "Root-centred, new room"], rows, "E0")
+    # one row per error, sensors and rooms across: fits one IEEE column
+    rows = [[lab] + [f"{v[(m, p, k)]:.0f}" for m in MODS for p in ("within", "cross")]
+            for k, lab in (("mpjpe_mm", "MPJPE"), ("root_err_mm", "Root"), ("rel_mpjpe_mm", "Root-centred"))]
+    table("table1", ["Error", "Radar, same room", "Radar, new room", "Wi-Fi, same room", "Wi-Fi, new room"], rows, "E0")
 
 
 def data_facts():
@@ -119,14 +120,15 @@ def headline():
         put(f"ft_{m}", h[(m, "supft")]["mpjpe_mm"], "{:.1f}", "headline")
         put(f"cal_close_{m}", 100 * (src["mpjpe_mm"] - h[(m, "affine+smooth")]["mpjpe_mm"]) / (src["mpjpe_mm"] - w),
             "{:.0f}", "headline")
+        rows.append([NAME[m], "", "", ""])               # group row: the sensor, instead of a column
         for meth, lab in (("source", "Frozen model"), ("rigid", "Rigid correction"), ("affine", "Affine correction"),
-                          ("affine+smooth", "Affine correction + smoothing"), ("supft", "Online fine-tuning (tuned)")):
+                          ("affine+smooth", "Affine + smoothing"), ("supft", "Fine-tuning (tuned)")):
             r = h[(m, meth)]
-            rows.append([NAME[m], lab, f"{r['mpjpe_mm']:.1f} ± {r['mpjpe_std']:.1f}", f"{r['root_err_mm']:.1f}",
+            rows.append([lab, f"{r['mpjpe_mm']:.1f} ± {r['mpjpe_std']:.1f}", f"{r['root_err_mm']:.1f}",
                          f"{r['rel_mpjpe_mm']:.1f}"])
-        rows.append([NAME[m], "Within-room reference", f"{w:.1f}", "", ""])
+        rows.append(["Same-room reference", f"{w:.1f}", "", ""])
     if rows:
-        table("table3", ["Sensor", "Method", "MPJPE", "Root", "Root-centred"], rows, "headline")
+        table("table3", ["Method", "MPJPE", "Root", "Root-centred"], rows, "headline")
 
 
 def budget():
@@ -211,14 +213,15 @@ def labelfree():
         put(f"iid_norm_root_{m}", lf[(m, "shuffled", "norm")]["root_err_mm"], "{:.0f}", "labelfree")
         put(f"iid_norm_act_{m}", lf[(m, "shuffled", "norm")]["act_acc"], "{:.2f}", "labelfree")
         put(f"iid_tent_act_{m}", lf[(m, "shuffled", "tent")]["act_acc"], "{:.2f}", "labelfree")
-        for order, meth, lab in (("sequential", "source", "Frozen model"), ("sequential", "norm", "Normalization statistics"),
-                                 ("sequential", "tent", "Tent"), ("sequential", "smooth", "Smoothing of predictions"),
-                                 ("shuffled", "norm", "Normalization statistics, shuffled"),
+        rows.append([NAME[m], "", "", "", ""])          # group row: the sensor, instead of a column
+        for order, meth, lab in (("sequential", "source", "Frozen model"), ("sequential", "norm", "Norm. statistics"),
+                                 ("sequential", "tent", "Tent"), ("sequential", "smooth", "Smoothing"),
+                                 ("shuffled", "norm", "Norm. statistics, shuffled"),
                                  ("shuffled", "tent", "Tent, shuffled")):
             r = lf[(m, order, meth)]
-            act = f"{r['act_acc']:.2f}"
-            rows.append([NAME[m], lab, f"{r['mpjpe_mm']:.0f}", f"{r['root_err_mm']:.0f}", f"{r['rel_mpjpe_mm']:.0f}", act])
-    table("table2", ["Sensor", "Method", "MPJPE", "Root", "Root-centred", "Action"], rows, "labelfree")
+            rows.append([lab, f"{r['mpjpe_mm']:.0f}", f"{r['root_err_mm']:.0f}", f"{r['rel_mpjpe_mm']:.0f}",
+                         f"{r['act_acc']:.2f}"])
+    table("table2", ["Method", "MPJPE", "Root", "Root-centred", "Action"], rows, "labelfree")
 
 
 def predeploy():

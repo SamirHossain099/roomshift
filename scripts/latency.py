@@ -2,7 +2,8 @@
 on one CPU thread. Held-out room E04, seed 0, the first N frames of the stream, batches of 16, one label every 100
 frames; supervised fine-tuning at the tuned settings. Writes results/latency.json.
 
-The GPU is shared with other jobs on this machine, so GPU times are upper bounds; the CPU run is single-threaded.
+GPU times are wall-clock with synchronisation; CPU times are the thread's own CPU time (time.thread_time) on one
+thread, which other processes competing for the cores do not inflate.
 
     python scripts/latency.py
 """
@@ -27,6 +28,7 @@ METHODS_TIMED = ["source", "smooth", "shift", "rigid", "affine", "affine+smooth"
 
 def timed(method, T, dev):
     sync = torch.cuda.synchronize if dev == "cuda" else (lambda: None)
+    clock = time.perf_counter if dev == "cuda" else time.thread_time
     order = np.lexsort((np.arange(len(T["pose"])), T["seq"].cpu().numpy()))[:N]
     frame, total, upd = 0, 0.0, []
     for b in batches(T, order, 16, False):
@@ -34,18 +36,20 @@ def timed(method, T, dev):
         lab = (torch.arange(frame, frame + n, device=dev) % K) == 0
         frame += n
         sync()
-        t0 = time.perf_counter()
+        t0 = clock()
         method.step(b)
         sync()
-        t1 = time.perf_counter()
+        t1 = clock()
         method.feedback(b, {"label": lab})
         sync()
-        t2 = time.perf_counter()
+        t2 = clock()
         total += t2 - t0
         if lab.any():
             upd.append(t2 - t1)
-    return {"ms_per_frame_amortised": 1000 * total / frame, "ms_per_update": 1000 * float(np.median(upd)),
-            "frames": frame}
+    # thread_time ticks at ~15.6 ms on Windows: a median of sub-tick updates reads 0, the mean averages the ticks out
+    per_upd = float(np.median(upd)) if dev == "cuda" else float(np.mean(upd))
+    return {"ms_per_frame_amortised": 1000 * total / frame, "ms_per_update": 1000 * per_upd,
+            "updates": len(upd), "frames": frame}
 
 
 def main():
